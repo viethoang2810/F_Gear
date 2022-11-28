@@ -27,11 +27,10 @@ function LoginPage() {
       fontSize: 50,
     },
   };
-  const [ user, setUser ] = useState({
+  const [user, setUser] = useState({
     username: "",
     password: "",
   });
-
 
   return (
     <div className={cx("wrapper")}>
@@ -55,9 +54,8 @@ function LoginPage() {
               type="Text"
               name="Username"
               onChange={(e) => {
-                                 
-                                 setUser({...user , username:e.target.value})
-                                }}
+                setUser({ ...user, username: e.target.value });
+              }}
             />
           </Grid>
           <Grid item>
@@ -68,7 +66,7 @@ function LoginPage() {
               style={{ width: 450 }}
               type="password"
               name="Password"
-              onChange={(e) => setUser({...user, password: e.target.value})}
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
             />
           </Grid>
         </Grid>
@@ -77,14 +75,10 @@ function LoginPage() {
             type="submit"
             variant="contained"
             color="primary"
-            style={{ marginTop: 10,
-                     width:130,
-                     marginTop:10
-                  }}
+            style={{ marginTop: 10, width: 130, marginTop: 10 }}
           >
             Log in
           </Button>
-
         </Grid>
       </FormWrapper>
     </div>

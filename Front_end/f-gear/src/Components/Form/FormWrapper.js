@@ -4,7 +4,6 @@ import ButtonIcon from "../ButtonWrapper/ButtonIcon/ButtonIcon";
 import {
   Card,
   CardContent,
-
   Typography,
   Avatar,
 } from "@mui/material";
@@ -42,7 +41,12 @@ function FormWrapper({ children }) {
           <ButtonIcon link={images.google} ></ButtonIcon>
           <ButtonIcon link={images.facebook}></ButtonIcon>
         </ButtonWrapper>
-        <Typography variant="subtitle1" style={{marginTop:10 , marginBottom:5,cursor:'pointer',fontWeight:600}} className={cx('reset_password')}>Forgot password ? </Typography>
+        <Typography 
+                    variant="subtitle1" 
+                    style={{marginTop:10 , marginBottom:5,cursor:'pointer',fontWeight:600}} className={cx('reset_password')}
+        >
+            Forgot password ? 
+        </Typography>
       </CardContent>
     </Card>
   );
